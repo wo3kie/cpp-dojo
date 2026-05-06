@@ -71,14 +71,7 @@ $ make assert
 $ ./bin/assert 
 cxxDojo/assert.cpp:5 Assertion failed 1 == 2
 ```
-  
-### async.cpp  
-Demonstrates parallel computation using `std::async` to find the minimum and maximum elements in a range.
-  
-```{r, engine='cpp'}
-assert(min_max({1, 2, 3, 4, 5}) == {1, 5});
-```
-  
+    
 ### avl_tree.cpp  
 Implement an AVL tree data structure. From [Wikipedia](https://en.wikipedia.org/wiki/AVL_tree) an AVL tree is a self-balancing binary search tree, where the difference between heights of left and right subtrees cannot be more than one for any node.  
   
@@ -97,11 +90,6 @@ Hello World
 Implement a simple program for _ham_/_spam_ messages classification. Use the naive Bayes approach.
   
 From [Wikipedia](https://en.wikipedia.org/wiki/Naive_Bayes_classifier), naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes theorem with strong (naive) independence assumptions between the features.
-  
-### bellman_ford.cpp  
-Implement the Bellman-Ford algorithm.  
-  
-From [Wikipedia](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm), the Bellman–Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.  
   
 ### bloom_filter.cpp  
 Implement a Bloom filter.
@@ -140,11 +128,6 @@ Implement some examples showing class template argument deduction (CTAD) usage.
 ### demangle.cpp  
 Implement a function to demangle C++ type names. From [cppreference](https://en.cppreference.com/w/cpp/types/type_info/name) the `std::type_info::name` function returns an implementation-defined string representing the type. In many implementations, this string is a mangled name, which is not human-readable. The demangling process converts the mangled name back into a human-readable form, making it easier to understand the type information.
   
-### dijkstra.cpp  
-Implement Dijkstra algorithm.  
-  
-From [Wikipedia](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) the Dijkstra algorithm is a procedure for finding the shortest paths between nodes in a weighted graph.
-    
 ### enumerate_view.cpp  
 Implement a simple version of `std::enumerate_view`. From [cppreference](https://en.cppreference.com/w/cpp/ranges/enumerate_view.html) the `enumerate_view` is a range adaptor that takes a view and produces a view of tuples which holds: the value which is a zero-based index of the element of underlying sequence, and the reference to the underlying element.  
   
@@ -181,9 +164,6 @@ assert(FloatFormatter(0.0000001234, 7).toString() == "1.2e-07");
 assert(FloatFormatter(0.0000001234, 8).toString() == "1.23e-07");
 assert(FloatFormatter(0.0000001234, 9).toString() == "0.0000001");
 ```
-  
-### floyd_warshall.cpp  
-Implement Floyd-Warshall algorithm. From [Wikipedia](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm) the Floyd–Warshall algorithm is a procedure for finding shortest paths in a directed weighted graph with positive or negative edge weights but with no negative cycles.
   
 ### fold_expression.cpp  
 Implement simple examples that demonstrate how to use C++17 fold expressions.  
@@ -367,9 +347,6 @@ Implement `partition` and `stable_partition` algorithms.
   
 ### qr.cpp  
 Implement a function to do a QR decomposition of a matrix. From [Wikipedia](https://en.wikipedia.org/wiki/QR_decomposition) QR decomposition is a decomposition of a matrix _A_ into a product _A_=_QR_ of an orthogonal matrix _Q_ and an upper triangular matrix _R_.  
-    
-### quick_sort.cpp  
-Write a `quicksort` implementation. Can any STL utilities be used to simplify the task?
   
 ### reshuffle.cpp  
 Implement a function to reshuffle elements in a container. The function should take a container, and the `stddev` parameter to control the amount of randomness in the reshuffling.  
